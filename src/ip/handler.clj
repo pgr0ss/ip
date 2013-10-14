@@ -14,9 +14,13 @@
 (defn ip [request]
   (:remote-addr request))
 
+(defn full-request [request]
+  (str request))
+
 (defroutes app-routes
   (GET "/" [] ip)
   (GET "/headers" [] headers)
+  (GET "/request" [] full-request)
   (route/resources "/")
   (route/not-found "Not Found"))
 
