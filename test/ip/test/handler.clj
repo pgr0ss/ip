@@ -4,10 +4,15 @@
         ip.handler))
 
 (deftest test-app
-  (testing "main route"
+  (testing "ip"
     (let [response (app (request :get "/"))]
       (is (= (:status response) 200))
-      (is (= (:body response) "Hello World"))))
+      (is (= (:body response) "localhost"))))
+
+  (testing "headers"
+    (let [response (app (request :get "/headers"))]
+      (is (= (:status response) 200))
+      (is (re-find #"Host: localhost" (:body response)))))
   
   (testing "not-found route"
     (let [response (app (request :get "/invalid"))]
