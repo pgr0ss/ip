@@ -12,7 +12,9 @@
   (string/join "  <br/>\n" (map format-header (:headers request))))
 
 (defn ip [request]
-  (:remote-addr request))
+  (or
+    (get (:headers request) "x-forwarded-for")
+    (:remote-addr request)))
 
 (defn full-request [request]
   (str request))
