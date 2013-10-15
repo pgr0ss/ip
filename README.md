@@ -1,5 +1,7 @@
 # ip
 
+[![Build Status](https://travis-ci.org/pgr0ss/ip.png)](https://travis-ci.org/pgr0ss/ip)
+
 A very simple clojure app to show your current IP or headers. It's currently running at:
 
 http://ip.pgrs.net
