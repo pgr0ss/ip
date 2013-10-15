@@ -1,6 +1,14 @@
 # ip
 
-FIXME
+A very simple clojure app to show your current IP or headers. It's currently running at http://ip.pgrs.net
+
+You can also see the headers at:
+
+http://ip.pgrs.net/headers
+
+and the full clojure request object at:
+
+http://ip.pgrs.net/request
 
 ## Prerequisites
 
@@ -16,4 +24,4 @@ To start a web server for the application, run:
 
 ## License
 
-Copyright © 2013 FIXME
+Copyright © 2013 Paul Gross
