@@ -1,6 +1,8 @@
 # ip
 
-A very simple clojure app to show your current IP or headers. It's currently running at http://ip.pgrs.net
+A very simple clojure app to show your current IP or headers. It's currently running at:
+
+http://ip.pgrs.net
 
 You can also see the headers at:
 
